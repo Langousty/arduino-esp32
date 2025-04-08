@@ -112,7 +112,18 @@ set(ARDUINO_ALL_LIBRARIES
   WiFi
   WiFiProv
   Wire
+  PNGenc
   )
+
+set(ARDUINO_LIBRARY_PNGenc_SRCS
+  libraries/PNGenc/src/adler32.c
+  libraries/PNGenc/src/crc32.c
+  libraries/PNGenc/src/deflate.c
+  libraries/PNGenc/src/PNGenc.cpp
+  libraries/PNGenc/src/trees.c
+#  libraries/PNGenc/src/zutil.c
+)
+
 
 set(ARDUINO_LIBRARY_ArduinoOTA_SRCS libraries/ArduinoOTA/src/ArduinoOTA.cpp)
 set(ARDUINO_LIBRARY_ArduinoOTA_REQUIRES esp_https_ota)
