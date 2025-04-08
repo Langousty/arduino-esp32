@@ -112,7 +112,7 @@ set(ARDUINO_ALL_LIBRARIES
   WiFi
   WiFiProv
   Wire
-  PNGenc
+  #PNGenc
   )
 
 set(ARDUINO_LIBRARY_PNGenc_SRCS
